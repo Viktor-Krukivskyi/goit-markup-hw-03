@@ -1,0 +1,211 @@
+:root {
+    --color-primary: #212121;
+    --color-secondary:#757575;
+    --color-background: #2f303a;
+    --color-background-box1: #f5f5f5;
+    --color-background-box2: #f5f4fA;
+    --color-inverted:#2196f3;
+    --color-white:#fff;
+}
+
+body {
+    color: var(--color-primary);
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px; 
+    letter-spacing: 0.03em;
+}
+.header-link {
+     background-color: var(--color-white);
+}
+ .logo-accent {
+    background-color: var(--color-white);
+     color: var(--color-inverted);
+    
+ }
+ .logo-accent:hover,  :focus {
+    background-color: var(--color-inverted);
+    color: var(--color-white);
+   
+ }
+
+
+ .logo-footer {
+    background-color: var(--color-white);
+     color: var(--color-primary);
+    
+ }
+ .logo-footer:hover, :focus {
+    background-color: var(--color-inverted);
+color: var(--color-primary);
+
+ }
+
+ 
+.logo-header {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+   }
+ .logo-header:hover, :focus {
+     color: var(--color-white);
+     background-color: var(--color-inverted);
+    }
+
+.menu {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.14;
+    }
+
+.menu:hover, :focus {
+    color: var(--color-white);
+    background-color: var(--color-inverted);
+   }
+
+.mail {
+    color: var(--color-secondary);
+    font-size: 14px;
+    text-decoration: none;
+}
+.mail:hover, :focus {
+    color: var(--color-white);
+    background-color: var(--color-inverted);
+}
+.tel {
+    color: var(--color-secondary);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    }
+
+.tel:hover, :focus {
+    color: var(--color-white);
+    background-color: var(--color-inverted);
+}
+.main-hero {
+   font-family: 'Raleway';
+   background: var(--color-background);
+   letter-spacing: 0.06em;
+}
+.hero-title {
+    color: var(--color-white);
+    background:var(--color-background);
+    font-family: 'Roboto';
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+
+}
+
+.button-main {
+    background-color: var(--color-inverted);
+    color: var(--color-white);
+    font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+}
+
+.button-main:hover, :focus {
+    background:var(--color-inverted);
+    color: var(--color-background-box1);
+    
+}
+.section {
+    background-color: var(--color-white);
+}
+.section-footer {
+    background-color:var(--color-background-box1) ;
+}
+.section-title {
+    color: var(--color-primary);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.section-subtitle {
+    color: var(--color-secondary);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.main-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+.list {
+    list-style: none;
+}
+.img {
+    background-color: var(--color-white);
+}
+.address {
+        color: var(--color-white);
+        text-decoration: none;
+}
+.address:hover, :focus {
+    color: var(--color-white);
+    background-color: var(--color-inverted);
+}
+
+.main-address {
+    font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.19;
+        text-decoration: none;
+        font-style: normal;
+}
+
+.general-button {
+    background-color: var(--color-background-box2);
+    color: var(--color-primary);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    
+
+   
+}
+.general-button:hover, :focus {
+    background: var(--color-inverted);
+        color: var(--color-background-box1);
+}
+       
+
+.logo-accent-footer {
+    color: var(--color-inverted);
+    background-color: var(--color-background);
+}
+
+.logo-sub-accent-footer {
+    color: var(--color-white);
+    background-color: var(--color-background);
+}
+
+.logo-footer {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.logo-footer :hover,
+:focus {
+    color: var(--color-white);
+    background-color: var(--color-inverted);
+}
