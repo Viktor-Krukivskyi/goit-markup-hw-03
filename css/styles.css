@@ -7,6 +7,13 @@
     --color-inverted:#2196f3;
     --color-white:#fff;
 }
+*{
+    box-sizing: border-box;
+}
+*::before
+*::after {
+    box-sizing: inherit;
+}
 
 body {
     color: var(--color-primary);
@@ -17,6 +24,7 @@ body {
 .header-link {
      background-color: var(--color-white);
 }
+
  .logo-accent {
     background-color: var(--color-white);
      color: var(--color-inverted);
@@ -59,7 +67,7 @@ color: var(--color-primary);
     font-family: inherit;
     font-weight: 500;
     line-height: 1.14;
-    }
+}
 
 .menu:hover, :focus {
     color: var(--color-white);
@@ -98,7 +106,11 @@ color: var(--color-primary);
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-
+        text-align: center;
+        margin: 0 auto;
+        width: 696px
+        
+        
 }
 
 .button-main {
@@ -110,6 +122,13 @@ color: var(--color-primary);
         line-height: 1.87;
         letter-spacing: 0.03em;
         cursor: pointer;
+        text-align: center;
+        width: 100%;
+        Height: 50px; 
+        Top: 430px; 
+        Left: 692px; 
+        padding: auto;
+    
 }
 
 .button-main:hover, :focus {
@@ -130,6 +149,7 @@ color: var(--color-primary);
     font-size: 14px;
     line-height: 1.14;
 }
+    
 .section-subtitle {
     color: var(--color-secondary);
     font-family: 'Roboto';
@@ -176,9 +196,6 @@ color: var(--color-primary);
     line-height: 1.62;
     letter-spacing: 0.03em;
     cursor: pointer;
-    
-
-   
 }
 .general-button:hover, :focus {
     background: var(--color-inverted);
@@ -208,4 +225,10 @@ color: var(--color-primary);
 :focus {
     color: var(--color-white);
     background-color: var(--color-inverted);
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
