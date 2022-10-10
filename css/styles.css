@@ -6,10 +6,12 @@
     --color-background-box2: #f5f4fA;
     --color-inverted:#2196f3;
     --color-white:#fff;
+    --shadow-btn-color: rgba(0, 0, 0, 0.15);
 }
 *{
     box-sizing: border-box;
 }
+*,
 *::before
 *::after {
     box-sizing: inherit;
@@ -20,9 +22,26 @@ body {
     font-family: 'Roboto',sans-serif;
     font-size: 14px; 
     letter-spacing: 0.03em;
+    margin: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0; }
 .header-link {
-     background-color: var(--color-white);
+ background-color: var(--color-white);
+ border: 1px solid #ececec;
+}
+.container-nav,.list,.nav-list,.header-link,.logo-header {
+    display: flex;
+    align-items: center;
 }
 
  .logo-accent {
@@ -48,9 +67,9 @@ color: var(--color-primary);
 
  }
 
- 
 .logo-header {
     font-family: 'Raleway';
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -60,20 +79,31 @@ color: var(--color-primary);
      color: var(--color-white);
      background-color: var(--color-inverted);
     }
-
+.nav-list {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+}
 .menu {
     color: var(--color-primary);
     text-decoration: none;
     font-family: inherit;
     font-weight: 500;
     line-height: 1.14;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .menu:hover, :focus {
     color: var(--color-white);
     background-color: var(--color-inverted);
    }
-
+   .contact-list {
+       display: flex;
+       margin-left: auto;
+       gap: 50px;
+   }
 .mail {
     color: var(--color-secondary);
     font-size: 14px;
@@ -94,10 +124,22 @@ color: var(--color-primary);
     color: var(--color-white);
     background-color: var(--color-inverted);
 }
+
+
+.contact-item {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+}
 .main-hero {
-   font-family: 'Raleway';
-   background: var(--color-background);
-   letter-spacing: 0.06em;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    font-family: 'Raleway';
+        background: var(--color-background);
+        letter-spacing: 0.06em;
+        padding-top: 60px;
+            padding-bottom: 60px;
 }
 .hero-title {
     color: var(--color-white);
@@ -108,27 +150,31 @@ color: var(--color-primary);
         line-height: 1.36;
         text-align: center;
         margin: 0 auto;
-        width: 696px
-        
+        max-width: 696px;
+            margin-right: auto;
+            margin-bottom: 30px;
+            margin-left: auto;
+            text-transform: uppercase;
         
 }
 
 .button-main {
+    display: flex;
     background-color: var(--color-inverted);
     color: var(--color-white);
-    font-family: inherit;
         font-weight: 700;
+        
+        text-align: center;
         font-size: 16px;
         line-height: 1.87;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.06em;
+        display: inline-block;
+        padding: 10px 32px;
+        min-width: 216px;
+        box-shadow: 0px 4px 4px var(--shadow-btn-color);
+        border-radius: 4px;
+        border: none;
         cursor: pointer;
-        text-align: center;
-        width: 100%;
-        Height: 50px; 
-        Top: 430px; 
-        Left: 692px; 
-        padding: auto;
-    
 }
 
 .button-main:hover, :focus {
@@ -136,18 +182,46 @@ color: var(--color-primary);
     color: var(--color-background-box1);
     
 }
+/*  */
+
 .section {
     background-color: var(--color-white);
 }
 .section-footer {
     background-color:var(--color-background-box1) ;
 }
+.list-title {
+    position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+}
+.list-main {
+    display: flex;
+        flex-direction: row;
+        gap: 30px;
+        list-style: none;
+}
+.list-subtitle {
+    width: 270;
+}
+
+    
 .section-title {
     color: var(--color-primary);
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
 }
     
 .section-subtitle {
@@ -156,16 +230,51 @@ color: var(--color-primary);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    width: 270px;
+   
 }
 .main-title {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+.main-title-team {
+    font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        
+}
+.team-box {
+    width: 270px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--color-white);
+    text-align: center;
+}
+.about-section {
+padding-top: 0;
+
 }
 .list {
-    list-style: none;
+    list-style: none; 
+    display: flex;
+        flex-direction: row;
+        gap: 30px;
 }
+
+
 .img {
     background-color: var(--color-white);
 }
@@ -185,6 +294,11 @@ color: var(--color-primary);
         line-height: 1.19;
         text-decoration: none;
         font-style: normal;
+        margin-bottom: 9px;
+}
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+    font-style: normal;
 }
 
 .general-button {
@@ -197,9 +311,11 @@ color: var(--color-primary);
     letter-spacing: 0.03em;
     cursor: pointer;
 }
-.general-button:hover, :focus {
+
+.general-button:hover,
+:focus {
     background: var(--color-inverted);
-        color: var(--color-background-box1);
+    color: var(--color-background-box1);
 }
        
 
@@ -219,6 +335,7 @@ color: var(--color-primary);
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+    
 }
 
 .logo-footer :hover,
@@ -227,8 +344,14 @@ color: var(--color-primary);
     background-color: var(--color-inverted);
 }
 .container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
