@@ -83,7 +83,6 @@ color: var(--color-inverted);
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    margin-left: 93px;
    }
 
  .logo-header:hover, :focus {
@@ -157,11 +156,7 @@ align-items: center;
 /*  шапка   */
 
 
-.container-hero {
-    display: inline-block;
-    align-items: center;
-    text-align: center;
-}
+
 .main-hero {
     width: 100%;
     padding-top: 200px;
@@ -169,7 +164,7 @@ align-items: center;
     font-family: 'Raleway';
     background: var(--color-background);
     letter-spacing: 0.06em;
-   
+    text-align: center;
 }
 
 .hero-title {
@@ -193,11 +188,10 @@ align-items: center;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    padding: 200;
     margin-top: 40px;
-    margin-left: 100px;
     border-radius: 4px;
-    width: 216px;
+    min-width: 216px;
+    padding: 10px 32px;
     border: none;
     cursor: pointer;
 }
@@ -218,10 +212,6 @@ align-items: center;
     background-color:var(--color-background-box1) ;
 }
 
-.container-title {
-    margin-left: 107px;
-    
-}
 
 .list-title {
     position: absolute;
@@ -249,7 +239,7 @@ align-items: center;
 
 .list-team {
 display: flex;
-gap: 50px;
+gap: 30px;
 
 }
    
@@ -275,11 +265,6 @@ gap: 50px;
 
 /*  чим занімаємось */
 
-.about-section {
-    padding-top: 0;
-    margin: 107px;
-}
-
 .main-title {
     font-family: 'Roboto';
     font-weight: 700;
@@ -288,10 +273,13 @@ gap: 50px;
     margin-bottom: 50px;
     text-align: center;
 }
+.container-job {
+    padding-top: 0;
+}
 
 /*  викладачі  */
 
-.section-footer {
+.section-team {
    padding: 100px;
 }
 
@@ -301,9 +289,8 @@ gap: 50px;
     font-size: 36px;
     line-height: 1.16;
     margin-bottom: 10px;
-    text-align: center;
     margin-bottom: 50px;
-    margin-top: 50px;   
+    text-align: center;
 }
 
 .team-box {
@@ -341,7 +328,6 @@ text-decoration: none;
     text-decoration: none;
     font-style: normal;
     margin-top: 20px;
-    margin-left: 215px;
 }
 
 
@@ -376,7 +362,6 @@ text-decoration: none;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    margin-left: 215px;
     }
 
 .logo-footer :hover,
@@ -440,7 +425,7 @@ margin-right: -30px;
 .card-box {
     padding: 20px 24px;
     border: 1px solid var(--border-color);
-
+    border-top: 0;
     background-color: var(--color-white);
 }
 .section-title-port{
