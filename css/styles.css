@@ -44,7 +44,7 @@ ul {
 .container {
     width: 1200px;
     margin-left: auto;
-    margin-right: 215px;
+    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -63,8 +63,10 @@ align-items: center;
 .logo-accent {
      color: var(--color-inverted);
  }
-
- .logo-accent:hover,  :focus {
+ .logo-accent:hover {
+    color: var(--color-inverted);
+ }
+ .logo-accent:focus {
     color: var(--color-inverted);
  }
 
@@ -72,9 +74,13 @@ align-items: center;
      color: var(--color-primary); 
  }
 
- .logo-footer-menu, :focus {
+.menu.current {
+    color: var(--color-inverted);
+}
+ .logo-footer-menu :focus {
 color: var(--color-inverted);
  }
+
 
 .logo-header {
     font-family: 'Raleway';
@@ -85,9 +91,12 @@ color: var(--color-inverted);
     text-decoration: none;
    }
 
- .logo-header:hover, :focus {
+ .logo-header:hover {
     color: var(--color-white);
     background-color: var(--color-white);
+    }
+    .logo-header:focus {
+        background-color: var(--color-white);
     }
 
 .list-menu {
@@ -122,7 +131,10 @@ align-items: center;
     padding-bottom: 32px;
 }
 
-.menu:hover, :focus {
+.menu:hover {
+    color: var(--color-inverted);
+   }
+   .menu:focus {
     color: var(--color-inverted);
    }
 
@@ -138,18 +150,23 @@ align-items: center;
     text-decoration: none;
 }
 
-.mail:hover, :focus {
+.mail:hover {
     color: var(--color-inverted);  
+}
+.mail:focus {
+ color: var(--color-inverted);
 }
 
 .tel {
     color: var(--color-secondary);
     font-weight: 500;
-    font-size: 14px;
     text-decoration: none;
     }
 
-.tel:hover, :focus {
+.tel:hover {
+    color: var(--color-inverted);
+}
+.tel:focus {
     color: var(--color-inverted);
 }
 
@@ -174,10 +191,9 @@ align-items: center;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    margin-left: 280px;
+    margin: 0 auto;
     width: 696px;
     text-transform: uppercase;
-        
 }
 
 .button-main {
@@ -196,9 +212,12 @@ align-items: center;
     cursor: pointer;
 }
 
-.button-main:hover, :focus {
+.button-main:hover {
     background:var(--color-inverted);
     color: var(--color-white);   
+}
+.button-main:focus {
+    color: var(--color-white);
 }
 
 /*   переваги */
@@ -244,23 +263,16 @@ gap: 30px;
 }
    
 .section-title {
-    color: var(--color-primary);
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
-
 }
     
 .section-subtitle {
     color: var(--color-secondary);
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.71;
-    width: 270px;
 }
 
 /*  чим занімаємось */
@@ -273,15 +285,13 @@ gap: 30px;
     margin-bottom: 50px;
     text-align: center;
 }
-.container-job {
+
+.section-job {
     padding-top: 0;
 }
 
 /*  викладачі  */
 
-.section-team {
-   padding: 100px;
-}
 
 .main-title-team {
     font-family: 'Roboto';
@@ -316,15 +326,17 @@ color: var(--color-white);
 text-decoration: none;
 }
 
-.address:hover, :focus {
+.address:hover {
+    color: var(--color-inverted);
+}
+.address:focus {
     color: var(--color-inverted);
 }
 
 .main-address {
     font-family: 'Roboto';
-    font-weight: 700;
     font-size: 14px;
-    line-height: 1.19;
+    line-height: 1.71 ;
     text-decoration: none;
     font-style: normal;
     margin-top: 20px;
@@ -342,10 +354,14 @@ text-decoration: none;
     cursor: pointer;
 }
 
-.general-button:hover,
-:focus {
-    background: var(--color-inverted);
-    color: var(--color-background-box1);
+.general-button:hover {
+    color: var(--color-inverted);
+   
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.general-button:focus {
+    color: var(--color-white);
+    background-color: var(--color-inverted);
 }
        
 .logo-accent-footer {
@@ -428,16 +444,16 @@ margin-right: -30px;
     border-top: 0;
     background-color: var(--color-white);
 }
-.section-title-port{
-    margin-bottom: 4px;
-    font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
+.section-title-port {
+margin-bottom: 4px;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
 }
 .section-subtitle-port {
+color: var(--color-secondary);
 font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-
+line-height: 1.87;
+letter-spacing: 0.03em;
 }
